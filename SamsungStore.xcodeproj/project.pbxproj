@@ -7,27 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DE572EEA294CAD3500F64994 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE572EE9294CAD3500F64994 /* ViewModel.swift */; };
-		DE572EEC294CAD6100F64994 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE572EEB294CAD6100F64994 /* Dynamic.swift */; };
+		DE5559DF29533232003AA66F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5559DE29533232003AA66F /* Coordinator.swift */; };
 		DE5DD5482944D921008AB925 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5DD5472944D921008AB925 /* AppDelegate.swift */; };
-		DE5DD54A2944D921008AB925 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5DD5492944D921008AB925 /* SceneDelegate.swift */; };
-		DE5DD54C2944D921008AB925 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5DD54B2944D921008AB925 /* ViewController.swift */; };
 		DE5DD5512944D922008AB925 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE5DD5502944D922008AB925 /* Assets.xcassets */; };
 		DE5DD5542944D922008AB925 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5DD5522944D922008AB925 /* LaunchScreen.storyboard */; };
-		DE5DD56929476869008AB925 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5DD56829476869008AB925 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DE572EE9294CAD3500F64994 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
-		DE572EEB294CAD6100F64994 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		DE5559DE29533232003AA66F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		DE5DD5442944D921008AB925 /* SamsungStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SamsungStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE5DD5472944D921008AB925 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DE5DD5492944D921008AB925 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DE5DD54B2944D921008AB925 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DE5DD5502944D922008AB925 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE5DD5532944D922008AB925 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE5DD5552944D922008AB925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DE5DD56829476869008AB925 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,12 +33,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DE572EED294CAD7600F64994 /* Bindings */ = {
+		DE5559E02953323E003AA66F /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
-				DE572EEB294CAD6100F64994 /* Dynamic.swift */,
+				DE5559DE29533232003AA66F /* Coordinator.swift */,
 			);
-			path = Bindings;
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		DE5559E129533251003AA66F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DE5559E229533275003AA66F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DE5559E329533280003AA66F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		DE5DD53B2944D921008AB925 = {
@@ -69,40 +82,15 @@
 			isa = PBXGroup;
 			children = (
 				DE5DD5472944D921008AB925 /* AppDelegate.swift */,
-				DE5DD5492944D921008AB925 /* SceneDelegate.swift */,
-				DE5DD570294A1CF1008AB925 /* ViewModels */,
-				DE5DD56C294768C3008AB925 /* Views */,
-				DE5DD56D2947694A008AB925 /* Models */,
+				DE5559E02953323E003AA66F /* Coordinators */,
+				DE5559E329533280003AA66F /* Models */,
+				DE5559E229533275003AA66F /* Views */,
+				DE5559E129533251003AA66F /* ViewModels */,
 				DE5DD5502944D922008AB925 /* Assets.xcassets */,
 				DE5DD5522944D922008AB925 /* LaunchScreen.storyboard */,
 				DE5DD5552944D922008AB925 /* Info.plist */,
 			);
 			path = SamsungStore;
-			sourceTree = "<group>";
-		};
-		DE5DD56C294768C3008AB925 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				DE5DD54B2944D921008AB925 /* ViewController.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		DE5DD56D2947694A008AB925 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				DE5DD56829476869008AB925 /* Model.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		DE5DD570294A1CF1008AB925 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				DE572EED294CAD7600F64994 /* Bindings */,
-				DE572EE9294CAD3500F64994 /* ViewModel.swift */,
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,12 +163,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE5DD54C2944D921008AB925 /* ViewController.swift in Sources */,
+				DE5559DF29533232003AA66F /* Coordinator.swift in Sources */,
 				DE5DD5482944D921008AB925 /* AppDelegate.swift in Sources */,
-				DE5DD54A2944D921008AB925 /* SceneDelegate.swift in Sources */,
-				DE572EEC294CAD6100F64994 /* Dynamic.swift in Sources */,
-				DE5DD56929476869008AB925 /* Model.swift in Sources */,
-				DE572EEA294CAD3500F64994 /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
