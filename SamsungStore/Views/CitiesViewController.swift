@@ -30,6 +30,14 @@ final class CitiesViewController: UITableViewController, CityOutput {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // MARK: - LifeCycle
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+    }
+    
     // MARK: - Table
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

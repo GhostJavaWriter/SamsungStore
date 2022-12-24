@@ -21,6 +21,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         coordinator = UserEditCoordinator(user: user, navigationController: navController)
         coordinator.start()
         
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = navController
+        window?.makeKeyAndVisible()
+        
         return true
     }
 }

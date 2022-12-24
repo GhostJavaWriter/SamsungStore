@@ -22,12 +22,18 @@ final class UserEditViewController: UIViewController, UpdateableWithUser {
     private lazy var userLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.numberOfLines = 2
         return label
     }()
     
     private lazy var selectCityButton: UIButton = {
         let btn = UIButton(type: .system)
         btn.translatesAutoresizingMaskIntoConstraints = false
+        btn.setTitle("Select city", for: .normal)
+        btn.addTarget(self, action: #selector(selectCityTap), for: .touchUpInside)
+        btn.setTitleColor(.white, for: .normal)
+        btn.backgroundColor = .systemBlue
+        btn.layer.cornerRadius = 5
         return btn
     }()
     
@@ -49,8 +55,9 @@ final class UserEditViewController: UIViewController, UpdateableWithUser {
         NSLayoutConstraint.activate([
             userLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             userLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            selectCityButton.leadingAnchor.constraint(equalTo: userLabel.leadingAnchor),
-            selectCityButton.topAnchor.constraint(equalTo: userLabel.topAnchor, constant: 20)
+            selectCityButton.centerXAnchor.constraint(equalTo: userLabel.centerXAnchor),
+            selectCityButton.topAnchor.constraint(equalTo: userLabel.bottomAnchor, constant: 20),
+            selectCityButton.widthAnchor.constraint(equalToConstant: 120)
         ])
     }
     
@@ -65,7 +72,7 @@ final class UserEditViewController: UIViewController, UpdateableWithUser {
     // MARK: - Actions
     
     @objc private func selectCityTap() {
-        
+        onSelectCity?()
     }
     
     private func updateView() {
