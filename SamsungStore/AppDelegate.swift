@@ -11,15 +11,14 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
-    var coordinator: UserEditCoordinator!
+    var appCoordinator: Coordinator!
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         let navController = UINavigationController()
-        let user = User(name: "Baaa", city: City(name: "dasdad"))
+        appCoordinator = CoordinatorFactory().createAppCoordinator(navigationController: navController)
         
-        coordinator = UserEditCoordinator(user: user, navigationController: navController)
-        coordinator.start()
+        appCoordinator.start()
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = navController

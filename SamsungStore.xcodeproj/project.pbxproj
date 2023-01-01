@@ -7,26 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DE5559DF29533232003AA66F /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5559DE29533232003AA66F /* AppCoordinator.swift */; };
-		DE5559E5295335D2003AA66F /* UserEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5559E4295335D2003AA66F /* UserEditViewController.swift */; };
-		DE5559E729534ECA003AA66F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5559E629534ECA003AA66F /* User.swift */; };
-		DE5559E929534EFC003AA66F /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5559E829534EFC003AA66F /* City.swift */; };
-		DE5559EB2953514A003AA66F /* CitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5559EA2953514A003AA66F /* CitiesViewController.swift */; };
-		DE5559ED2953524C003AA66F /* CitiesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5559EC2953524C003AA66F /* CitiesViewModel.swift */; };
-		DE5559EF29535485003AA66F /* UserEditCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5559EE29535485003AA66F /* UserEditCoordinator.swift */; };
+		DE01730129592C13002E9949 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE01730029592C13002E9949 /* Coordinator.swift */; };
+		DE01730429611E24002E9949 /* ModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE01730329611E24002E9949 /* ModuleFactory.swift */; };
+		DE01730629611E97002E9949 /* EnterPhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE01730529611E97002E9949 /* EnterPhoneViewController.swift */; };
+		DE017308296122B7002E9949 /* FlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE017307296122B7002E9949 /* FlowController.swift */; };
+		DE01730A29612730002E9949 /* ConformPhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE01730929612730002E9949 /* ConformPhoneViewController.swift */; };
+		DE01730C29612798002E9949 /* EnterNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE01730B29612798002E9949 /* EnterNameViewController.swift */; };
+		DE01730E296127BC002E9949 /* EnterBirthdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE01730D296127BC002E9949 /* EnterBirthdayViewController.swift */; };
+		DE01731029612889002E9949 /* EnterPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE01730F29612889002E9949 /* EnterPasswordViewController.swift */; };
+		DE01731229612C33002E9949 /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE01731129612C33002E9949 /* CoordinatorFactory.swift */; };
+		DE01731429613334002E9949 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE01731329613334002E9949 /* AppCoordinator.swift */; };
+		DE5559E729534ECA003AA66F /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5559E629534ECA003AA66F /* UserData.swift */; };
+		DE5559EF29535485003AA66F /* RegistrationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5559EE29535485003AA66F /* RegistrationCoordinator.swift */; };
 		DE5DD5482944D921008AB925 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5DD5472944D921008AB925 /* AppDelegate.swift */; };
 		DE5DD5512944D922008AB925 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE5DD5502944D922008AB925 /* Assets.xcassets */; };
 		DE5DD5542944D922008AB925 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5DD5522944D922008AB925 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DE5559DE29533232003AA66F /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		DE5559E4295335D2003AA66F /* UserEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEditViewController.swift; sourceTree = "<group>"; };
-		DE5559E629534ECA003AA66F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		DE5559E829534EFC003AA66F /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
-		DE5559EA2953514A003AA66F /* CitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesViewController.swift; sourceTree = "<group>"; };
-		DE5559EC2953524C003AA66F /* CitiesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesViewModel.swift; sourceTree = "<group>"; };
-		DE5559EE29535485003AA66F /* UserEditCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEditCoordinator.swift; sourceTree = "<group>"; };
+		DE01730029592C13002E9949 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		DE01730329611E24002E9949 /* ModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleFactory.swift; sourceTree = "<group>"; };
+		DE01730529611E97002E9949 /* EnterPhoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPhoneViewController.swift; sourceTree = "<group>"; };
+		DE017307296122B7002E9949 /* FlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowController.swift; sourceTree = "<group>"; };
+		DE01730929612730002E9949 /* ConformPhoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConformPhoneViewController.swift; sourceTree = "<group>"; };
+		DE01730B29612798002E9949 /* EnterNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterNameViewController.swift; sourceTree = "<group>"; };
+		DE01730D296127BC002E9949 /* EnterBirthdayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterBirthdayViewController.swift; sourceTree = "<group>"; };
+		DE01730F29612889002E9949 /* EnterPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPasswordViewController.swift; sourceTree = "<group>"; };
+		DE01731129612C33002E9949 /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
+		DE01731329613334002E9949 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		DE5559E629534ECA003AA66F /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		DE5559EE29535485003AA66F /* RegistrationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationCoordinator.swift; sourceTree = "<group>"; };
 		DE5DD5442944D921008AB925 /* SamsungStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SamsungStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE5DD5472944D921008AB925 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE5DD5502944D922008AB925 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -45,11 +55,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE0172FF29592BE9002E9949 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				DE01730029592C13002E9949 /* Coordinator.swift */,
+				DE017307296122B7002E9949 /* FlowController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		DE01730229611E05002E9949 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				DE01730329611E24002E9949 /* ModuleFactory.swift */,
+				DE01731129612C33002E9949 /* CoordinatorFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
 		DE5559E02953323E003AA66F /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
-				DE5559DE29533232003AA66F /* AppCoordinator.swift */,
-				DE5559EE29535485003AA66F /* UserEditCoordinator.swift */,
+				DE01731329613334002E9949 /* AppCoordinator.swift */,
+				DE5559EE29535485003AA66F /* RegistrationCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -57,7 +85,6 @@
 		DE5559E129533251003AA66F /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				DE5559EC2953524C003AA66F /* CitiesViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -65,8 +92,11 @@
 		DE5559E229533275003AA66F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				DE5559E4295335D2003AA66F /* UserEditViewController.swift */,
-				DE5559EA2953514A003AA66F /* CitiesViewController.swift */,
+				DE01730529611E97002E9949 /* EnterPhoneViewController.swift */,
+				DE01730929612730002E9949 /* ConformPhoneViewController.swift */,
+				DE01730F29612889002E9949 /* EnterPasswordViewController.swift */,
+				DE01730B29612798002E9949 /* EnterNameViewController.swift */,
+				DE01730D296127BC002E9949 /* EnterBirthdayViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -74,8 +104,7 @@
 		DE5559E329533280003AA66F /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				DE5559E629534ECA003AA66F /* User.swift */,
-				DE5559E829534EFC003AA66F /* City.swift */,
+				DE5559E629534ECA003AA66F /* UserData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -100,6 +129,8 @@
 			isa = PBXGroup;
 			children = (
 				DE5DD5472944D921008AB925 /* AppDelegate.swift */,
+				DE01730229611E05002E9949 /* Factories */,
+				DE0172FF29592BE9002E9949 /* Base */,
 				DE5559E02953323E003AA66F /* Coordinators */,
 				DE5559E329533280003AA66F /* Models */,
 				DE5559E229533275003AA66F /* Views */,
@@ -181,13 +212,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE5559E729534ECA003AA66F /* User.swift in Sources */,
-				DE5559E929534EFC003AA66F /* City.swift in Sources */,
-				DE5559DF29533232003AA66F /* AppCoordinator.swift in Sources */,
-				DE5559ED2953524C003AA66F /* CitiesViewModel.swift in Sources */,
-				DE5559EB2953514A003AA66F /* CitiesViewController.swift in Sources */,
-				DE5559EF29535485003AA66F /* UserEditCoordinator.swift in Sources */,
-				DE5559E5295335D2003AA66F /* UserEditViewController.swift in Sources */,
+				DE01731029612889002E9949 /* EnterPasswordViewController.swift in Sources */,
+				DE01730E296127BC002E9949 /* EnterBirthdayViewController.swift in Sources */,
+				DE01731429613334002E9949 /* AppCoordinator.swift in Sources */,
+				DE01730129592C13002E9949 /* Coordinator.swift in Sources */,
+				DE01731229612C33002E9949 /* CoordinatorFactory.swift in Sources */,
+				DE01730429611E24002E9949 /* ModuleFactory.swift in Sources */,
+				DE5559E729534ECA003AA66F /* UserData.swift in Sources */,
+				DE017308296122B7002E9949 /* FlowController.swift in Sources */,
+				DE01730A29612730002E9949 /* ConformPhoneViewController.swift in Sources */,
+				DE01730629611E97002E9949 /* EnterPhoneViewController.swift in Sources */,
+				DE5559EF29535485003AA66F /* RegistrationCoordinator.swift in Sources */,
+				DE01730C29612798002E9949 /* EnterNameViewController.swift in Sources */,
 				DE5DD5482944D921008AB925 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
