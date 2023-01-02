@@ -15,13 +15,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        let navController = UINavigationController()
-        appCoordinator = CoordinatorFactory().createAppCoordinator(navigationController: navController)
+//        let navController = UINavigationController()
+//        appCoordinator = CoordinatorFactory().createAppCoordinator(navigationController: navController)
+//
+//        appCoordinator.start()
         
-        appCoordinator.start()
+        let tabBarController = MainTabBarController()
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = navController
+//        window?.rootViewController = navController
+        window?.rootViewController = tabBarController
         window?.makeKeyAndVisible()
         
         return true

@@ -10,7 +10,7 @@ import UIKit
 final class RegistrationCoordinator: Coordinator {
     
     var navigationController: UINavigationController
-    var flowCompletionHandler: CoordinatorHandler?
+    var flowCompletionHandler: CompletionHandler?
     
     private let moduleFactory = ModuleFactory()
     private var userData = UserData(phoneNumber: nil, password: nil, name: nil, birthday: nil)

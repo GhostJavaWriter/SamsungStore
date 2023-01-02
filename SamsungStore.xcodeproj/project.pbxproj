@@ -17,6 +17,9 @@
 		DE01731029612889002E9949 /* EnterPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE01730F29612889002E9949 /* EnterPasswordViewController.swift */; };
 		DE01731229612C33002E9949 /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE01731129612C33002E9949 /* CoordinatorFactory.swift */; };
 		DE01731429613334002E9949 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE01731329613334002E9949 /* AppCoordinator.swift */; };
+		DE0173162962791D002E9949 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0173152962791D002E9949 /* HomeScreenViewController.swift */; };
+		DE01731829627BD6002E9949 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE01731729627BD6002E9949 /* MainTabBarController.swift */; };
+		DE01731B296283F5002E9949 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE01731A296283F5002E9949 /* UIColor+Extension.swift */; };
 		DE5559E729534ECA003AA66F /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5559E629534ECA003AA66F /* UserData.swift */; };
 		DE5559EF29535485003AA66F /* RegistrationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5559EE29535485003AA66F /* RegistrationCoordinator.swift */; };
 		DE5DD5482944D921008AB925 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5DD5472944D921008AB925 /* AppDelegate.swift */; };
@@ -35,6 +38,9 @@
 		DE01730F29612889002E9949 /* EnterPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPasswordViewController.swift; sourceTree = "<group>"; };
 		DE01731129612C33002E9949 /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
 		DE01731329613334002E9949 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		DE0173152962791D002E9949 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		DE01731729627BD6002E9949 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		DE01731A296283F5002E9949 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		DE5559E629534ECA003AA66F /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		DE5559EE29535485003AA66F /* RegistrationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationCoordinator.swift; sourceTree = "<group>"; };
 		DE5DD5442944D921008AB925 /* SamsungStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SamsungStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +79,14 @@
 			path = Factories;
 			sourceTree = "<group>";
 		};
+		DE017319296283DE002E9949 /* Helplers */ = {
+			isa = PBXGroup;
+			children = (
+				DE01731A296283F5002E9949 /* UIColor+Extension.swift */,
+			);
+			path = Helplers;
+			sourceTree = "<group>";
+		};
 		DE5559E02953323E003AA66F /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,10 +107,12 @@
 			isa = PBXGroup;
 			children = (
 				DE01730529611E97002E9949 /* EnterPhoneViewController.swift */,
+				DE01731729627BD6002E9949 /* MainTabBarController.swift */,
 				DE01730929612730002E9949 /* ConformPhoneViewController.swift */,
 				DE01730F29612889002E9949 /* EnterPasswordViewController.swift */,
 				DE01730B29612798002E9949 /* EnterNameViewController.swift */,
 				DE01730D296127BC002E9949 /* EnterBirthdayViewController.swift */,
+				DE0173152962791D002E9949 /* HomeScreenViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -128,6 +144,7 @@
 		DE5DD5462944D921008AB925 /* SamsungStore */ = {
 			isa = PBXGroup;
 			children = (
+				DE017319296283DE002E9949 /* Helplers */,
 				DE5DD5472944D921008AB925 /* AppDelegate.swift */,
 				DE01730229611E05002E9949 /* Factories */,
 				DE0172FF29592BE9002E9949 /* Base */,
@@ -214,10 +231,12 @@
 			files = (
 				DE01731029612889002E9949 /* EnterPasswordViewController.swift in Sources */,
 				DE01730E296127BC002E9949 /* EnterBirthdayViewController.swift in Sources */,
+				DE01731829627BD6002E9949 /* MainTabBarController.swift in Sources */,
 				DE01731429613334002E9949 /* AppCoordinator.swift in Sources */,
 				DE01730129592C13002E9949 /* Coordinator.swift in Sources */,
 				DE01731229612C33002E9949 /* CoordinatorFactory.swift in Sources */,
 				DE01730429611E24002E9949 /* ModuleFactory.swift in Sources */,
+				DE01731B296283F5002E9949 /* UIColor+Extension.swift in Sources */,
 				DE5559E729534ECA003AA66F /* UserData.swift in Sources */,
 				DE017308296122B7002E9949 /* FlowController.swift in Sources */,
 				DE01730A29612730002E9949 /* ConformPhoneViewController.swift in Sources */,
@@ -225,6 +244,7 @@
 				DE5559EF29535485003AA66F /* RegistrationCoordinator.swift in Sources */,
 				DE01730C29612798002E9949 /* EnterNameViewController.swift in Sources */,
 				DE5DD5482944D921008AB925 /* AppDelegate.swift in Sources */,
+				DE0173162962791D002E9949 /* HomeScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

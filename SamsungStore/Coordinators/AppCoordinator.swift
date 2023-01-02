@@ -10,7 +10,7 @@ import UIKit
 class AppCoordinator: Coordinator {
     
     var navigationController: UINavigationController
-    var flowCompletionHandler: CoordinatorHandler?
+    var flowCompletionHandler: CompletionHandler?
     
     var childCoordinators: [Coordinator] = []
     
